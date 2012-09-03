@@ -37,13 +37,6 @@ App.ContentView = Mov.ContentView.extend();
 	{{/view}}
 
 	{{#view App.ContentView}}
-		{{#collection App.ListView contentBinding="App.getArticlesController"}}
-			&lt;a {{ bindAttr href="content.link" }} data-ajax="false" &gt;
-				&lt;h3&gt;{{ content.title }}&lt;/h3&gt;
-				&lt;p&gt;via {{ content.creator }}&lt;/p&gt;
-				&lt;p&gt;{{{ content.desc }}}&lt;/p&gt;
-			&lt;/a&gt;
-		{{/collection}}
 	{{/view}}
 
 	{{#view App.FooterView}}
